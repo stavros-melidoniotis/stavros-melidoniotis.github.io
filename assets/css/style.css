@@ -12,8 +12,10 @@ body {
   font-family: "Open Sans", sans-serif;
   /* color: #272829; */
   color: white;
-  background: url("../img/main-bg.jpg") no-repeat;
+  background: url("../img/main-bg-2.jpg") no-repeat;
   background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 a {
@@ -251,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   /* background: url("../img/about-bg.jpg") top right no-repeat; */
-  background-size: cover;
+  /* background-size: cover; */
   position: relative;
 }
 
@@ -276,7 +278,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  text-shadow: 5px 5px #45505b;
   color: white;
 }
 
@@ -308,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: #e6936b;
 }
 
 @media (max-width: 992px) {
@@ -346,7 +347,8 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  /* color: #45505b; */
+  color: #e6936b;
 }
 
 .section-title h2::before {
@@ -378,24 +380,6 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-/* #about {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/about-bg.jpg") top right no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-#about:before {
-  content: "";
-  background: rgba(255, 255, 255, 0);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-} */
-
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -425,29 +409,13 @@ section {
   /* color: white; */
   font-family: "Poppins", sans-serif;
   font-size: 22px;
+  text-align: left;
+  line-height: 170%;
 }
 
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-#skills {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/skills-bg-2.jpg") no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-#skills:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .skills .progress {
   height: 50px;
   display: block;
@@ -461,7 +429,9 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #45505b;
+  /* color: #45505b; */
+  color: white;
+  font-size: 20px;
 }
 
 .skills .progress .skill .val {
