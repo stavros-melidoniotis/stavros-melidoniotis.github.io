@@ -134,8 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   #header {
     width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
+    background: #372d91a2;
     left: -300px;
   }
 }
@@ -231,7 +230,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #45505b;
+  /* color: #45505b; */
+  color:white;
 }
 
 .mobile-nav-active {
@@ -243,7 +243,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #0563bb;
+  /* color: #0563bb; */
+  color:white;
 }
 
 /*--------------------------------------------------------------
