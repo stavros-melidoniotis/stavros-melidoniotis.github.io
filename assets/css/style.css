@@ -456,8 +456,22 @@ section {
   text-align: center;
 }
 
-.fav-ides img .operating-systems a {
-  padding: 10px;
+.fav-ides, .operating-systems {
+  /* border: 1px solid white; */
+  padding: 20px;
+  text-align: center;
+}
+
+.fav-ides img, .operating-systems a {
+  margin: 10px;
+}
+
+.fav-ides img, .operating-systems img, .skills-icons img {
+  transition: transform .2s;
+}
+
+.fav-ides img:hover, .operating-systems img:hover, .skills-icons img:hover {
+  transform: scale(1.2);
 }
 
 /*--------------------------------------------------------------
