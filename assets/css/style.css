@@ -449,7 +449,15 @@ section {
   height: 10px;
   transition: .9s;
   /* background-color: #0563bb; */
-  background-color: rgb(31, 139, 31);
+  background-color:#0563bb;
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+.fav-ides img .operating-systems a {
+  padding: 10px;
 }
 
 /*--------------------------------------------------------------
