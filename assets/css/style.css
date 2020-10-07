@@ -954,6 +954,20 @@ section {
   color: #728394;
 }
 
+.contact-email {
+  text-align: center;
+  font-size: 25px;
+}
+
+.contact-email p {
+  color: white;
+}
+
+.contact-email p:hover {
+  color: #e6936b;
+}
+
+
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;
 }
@@ -1189,6 +1203,10 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+.footer-content {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
