@@ -601,7 +601,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  text-align: center;
+  text-align: left;
   z-index: 3;
   transition: all ease-in-out 0.3s;
   display: flex;
@@ -746,6 +746,20 @@ section {
   font-size: 15px;
   padding: 15px 0 0 0;
   display: inline;
+  text-align: left;
+}
+
+.no-click button {
+  pointer-events: none;
+  background: #8466df;
+  color: white;
+  border-radius: 13px;
+  padding: 5px 8px 5px 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 992px) {
