@@ -749,6 +749,14 @@ section {
   text-align: left;
 }
 
+.portfolio-info a {
+  color: white;
+}
+
+.portfolio-info a:hover {
+  color: #0563bb;
+}
+
 .no-click button {
   pointer-events: none;
   background: #8466df;
