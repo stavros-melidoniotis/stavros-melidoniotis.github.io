@@ -84,6 +84,13 @@
     }
   });
 
+  // Calculate age shown in about section
+  $(function() {
+    const age = $('#age');
+
+    age.text((new Date).getFullYear() - 1998);
+  });
+
   // Navigation active state on scroll
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, #mobile-nav');

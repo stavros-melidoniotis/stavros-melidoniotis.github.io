@@ -394,8 +394,24 @@ section {
 .about-text {
   font-family: "Poppins", sans-serif;
   font-size: 22px;
-  text-align: left;
+  text-align: justify;
   line-height: 170%;
+}
+
+@media (max-width: 992px) {
+  .about-content-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-content-wrapper img {
+    float: none;
+    margin-bottom: 2rem;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
