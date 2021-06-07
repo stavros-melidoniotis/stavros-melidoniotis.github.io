@@ -1,0 +1,81 @@
+:root {
+  --header-bg: #1f2428;
+  --header-border: #191d20;
+  --main-bg: #24292e;
+  --explorer-bg: #1f2428;
+  --explorer-border: #161a1d;
+  --footer-border: #1b1f23;
+  --text-color: #e1e4e8;
+  --faded-text-color: #e1e4e8d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 35px;
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+  padding: 0 0.5rem;
+}
+
+.vs-menu-item {
+  font-size: 0.8rem;
+}
+
+#vs-title {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+}
+
+.sidebar {
+  width: 4vw;
+  min-width: 40px;
+  height: calc(100vh - 35px - 30px);
+  padding: 1rem 0;
+  font-size: 1.8rem;
+}
+
+.sidebar > div > i {
+  color: var(--faded-text-color);
+  -webkit-text-stroke: 1px var(--main-bg);
+}
+
+.sidebar > div > i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.explorer {
+  width: 18vw;
+  background-color: var(--explorer-bg);
+  border-right: 1px solid var(--explorer-border);
+}
+
+#explorer-title {
+  padding: 0.3rem 0 0 0.8rem;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+footer {
+  height: 30px;
+  border-top: 1px solid var(--footer-border);
+  padding: 0 1rem;
+}
+
+footer > div > p > i {
+  -webkit-text-stroke: .8px var(--main-bg);
+}
