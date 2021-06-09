@@ -72,7 +72,8 @@
                 <div class="explorer-files d-flex d-none flex-column align-items-start">
                     <div> <img loading="lazy" src="assets/images/logos/html-logo.svg" alt="html-logo"> home.html </div>
                     <div> <img loading="lazy" src="assets/images/logos/js-logo.svg" alt="js-logo"> about.js </div>
-                    <div> <img loading="lazy" src="assets/images/logos/json-logo.svg" alt="json-logo"> contact.json </div>
+                    <div> <img loading="lazy" src="assets/images/logos/json-logo.svg" alt="json-logo"> contact.json
+                    </div>
                     <!-- <div> <img loading="lazy" src="assets/images/logos/json-logo.svg" alt="json-logo"> projects.html </div> -->
                 </div>
 
@@ -103,7 +104,7 @@
             <!-- tab content -->
             <main>
 
-                <section id="home" class="d-flex justify-content-center align-items-center">
+                <section id="home" class="d-none d-flex justify-content-center align-items-center">
                     <div class="home-background d-none d-xl-block">
                         <h1 class="fw-bolder"> WEB & APP </h1>
                         <h1 class="fw-bolder"> DEVELOPER </h1>
@@ -131,12 +132,41 @@
                     </div>
                 </section>
 
-                <section id="contact" class="d-none">
+                <section id="contact" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
 
                     <!-- να έχει ένα απλό template rendered και ένα toggle για developer mode που θα δείχνει το json -->
                     <!-- στα settings θα μπει το toggle developer mode και αν ενεργοποιηθεί θα δείχνει τις σελίδες σε κώδικα -->
 
-                    <pre>
+                    <h2> Find me on </h2>
+
+                    <div class="d-flex justify-content-center align-items-center gap-5 fs-2">
+                        <a href="mailto:melidon.stavros@gmail.com" title="Email me">
+                            <div class="contact-way-wrapper">
+                                <i class="far fa-envelope"></i>
+                                <!-- melidon.stavros@gmail.com -->
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/stavros-melidoniotis/" title="LinkedIn" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="contact-way-wrapper">
+                                <i class="fab fa-linkedin-in"></i>
+                                <!-- www.linkedin.com/in/stavros-melidoniotis/ -->
+                            </div>
+                        </a>
+
+
+                        <a href="https://github.com/stavros-melidoniotis" title="Github" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="contact-way-wrapper">
+                                <i class="fab fa-github"></i>
+                                <!-- https://github.com/stavros-melidoniotis -->
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- <pre>
                         <code>
                             {
                                 "email": "<a href="mailto:melidon.stavros@gmail.com">melidon.stavros@gmail.com</a>",
@@ -144,7 +174,25 @@
                                 "email": <a href="mailto:melidon.stavros@gmail.com">melidon.stavros@gmail.com</a>
                             }
                         </code>
-                    </pre>
+                    </pre> -->
+                </section>
+
+                <section id="projects" class="d-flex flex-column gap-5">
+
+                    <h1> Projects </h1>
+
+                    <div class="projects-wrapper d-flex flex-wrap gap-3">
+                        <div class="project">Project 1</div>
+                        <div class="project">Project 2</div>
+                        <div class="project">Project 3</div>
+                        <div class="project">Project 4</div>
+
+                        <div class="project">Project 5</div>
+                        <div class="project">Project 6</div>
+                        <div class="project">Project 7</div>
+                        <div class="project">Project 8</div>
+                    </div>
+
                 </section>
 
             </main>
