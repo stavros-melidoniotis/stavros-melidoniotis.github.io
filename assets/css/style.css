@@ -43,10 +43,6 @@ header {
   padding: 0 0.5rem;
 }
 
-.vs-menu-item {
-  font-size: 0.8rem;
-}
-
 #vs-title {
   font-size: 0.9rem;
   margin-bottom: 0;
@@ -123,21 +119,28 @@ body {
   color: var(--text-color);
 }
 
-.explorer-files > div {
+.menu-item {
   width: 100%;
   padding: 0.4rem 0.9rem;
   font-size: 0.9rem;
 }
 
-.explorer-files > div:hover {
+.menu-item:hover {
   background-color: var(--explorer-hover-bg);
+  cursor: pointer;
 }
 
-.explorer-files > div > img {
+.menu-item > img {
   width: 1rem;
   height: 1rem;
   margin-right: 0.3rem;
 }
+
+.menu-item > img:hover,
+.tab-menu-item > img:hover {
+  pointer-events: none;
+}
+
 
 
 /*-------------------------------
@@ -179,13 +182,17 @@ body {
   height: 1rem;
 }
 
-main section {
-  padding: 2rem;
+main {
+  padding: 1rem 2rem;
+}
+
+main > section {
   color: var(--text-color);
   font-family: JetBrains Mono, monospace;
   flex: 1 1;
   height: 85vh;
   overflow: auto;
+  padding-bottom: 2rem;
 }
 
 .home-background {
@@ -269,6 +276,42 @@ main section {
   box-shadow: 0px 3px 6px #00000066;
 }
 
+.about-me {
+  max-width: 90ch;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+}
+
+#heart {
+  color: red;
+  font-size: 2rem;
+}
+
+.skills-container {
+  width: 80%;
+}
+
+.skill {
+  background-color: var(--accent-color);
+  padding: .5rem 1rem;
+  border-radius: 0 7px 0 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+  transition-duration: .4s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill > img {
+  width: 2rem;
+  height: 2rem;
+}
+
 /*-------------------------------
 
             FOOTER
@@ -325,4 +368,32 @@ footer > div > a:hover {
   .home-background h1 {
     font-size: 9rem;
   }
+}
+
+
+/*-------------------------------
+
+            SCROLLBAR
+
+--------------------------------*/
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--header-bg);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

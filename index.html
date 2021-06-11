@@ -67,14 +67,19 @@
             <p class="explorer-title"> EXPLORER </p>
 
             <div>
-                <button class="explorer-toggler collapsed d-flex align-items-center gap-2 mb-2"> <i
-                        class="fas fa-chevron-right"></i> PORTFOLIO </button>
-                <div class="explorer-files d-flex d-none flex-column align-items-start">
-                    <div> <img loading="lazy" src="assets/images/logos/html-logo.svg" alt="html-logo"> home.html </div>
-                    <div> <img loading="lazy" src="assets/images/logos/js-logo.svg" alt="js-logo"> about.js </div>
-                    <div> <img loading="lazy" src="assets/images/logos/json-logo.svg" alt="json-logo"> contact.json
-                    </div>
-                    <!-- <div> <img loading="lazy" src="assets/images/logos/json-logo.svg" alt="json-logo"> projects.html </div> -->
+                <button class="explorer-toggler d-flex align-items-center gap-2 mb-2">
+                    <i class="fas fa-chevron-down"></i> PORTFOLIO
+                </button>
+
+                <div class="explorer-files d-flex flex-column align-items-start">
+                    <div class="menu-item" data-section="home"> <img loading="lazy"
+                            src="assets/images/logos/html-logo.svg" alt="html-logo"> home.html </div>
+                    <div class="menu-item" data-section="about"> <img loading="lazy"
+                            src="assets/images/logos/js-logo.svg" alt="js-logo"> about.js </div>
+                    <div class="menu-item" data-section="contact"> <img loading="lazy"
+                            src="assets/images/logos/json-logo.svg" alt="json-logo"> contact.json </div>
+                    <div class="menu-item" data-section="projects"> <img loading="lazy"
+                            src="assets/images/logos/json-logo.svg" alt="json-logo"> projects.md </div>
                 </div>
 
             </div>
@@ -87,16 +92,20 @@
             <!-- open tabs -->
             <div class="tabs-bar-wrapper">
                 <div class="tabs-bar d-flex">
-                    <div class="tab active">
+                    <div class="tab-menu-item tab active" data-section="home">
                         <img loading="lazy" src="assets/images/logos/html-logo.svg" alt="html-logo"> home.html
                     </div>
 
-                    <div class="tab">
+                    <div class="tab-menu-item tab" data-section="about">
                         <img loading="lazy" src="assets/images/logos/js-logo.svg" alt="js-logo"> about.js
                     </div>
 
-                    <div class="tab">
+                    <div class="tab-menu-item tab" data-section="contact">
                         <img loading="lazy" src="assets/images/logos/json-logo.svg" alt="json-logo"> contact.json
+                    </div>
+
+                    <div class="tab-menu-item tab" data-section="projects">
+                        <img loading="lazy" src="assets/images/logos/json-logo.svg" alt="md-logo"> projects.md
                     </div>
                 </div>
             </div>
@@ -104,7 +113,7 @@
             <!-- tab content -->
             <main>
 
-                <section id="home" class="d-none d-flex justify-content-center align-items-center">
+                <section id="home" class="portfolio-section d-flex justify-content-center align-items-center">
                     <div class="home-background d-none d-xl-block">
                         <h1 class="fw-bolder"> WEB & APP </h1>
                         <h1 class="fw-bolder"> DEVELOPER </h1>
@@ -132,14 +141,56 @@
                     </div>
                 </section>
 
-                <section id="contact" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
+                <section id="about" class="portfolio-section container-fluid d-none d-flex flex-column gap-5">
+
+                    <h2 class="mb-3"> About </h2>
+
+                    <p class="about-me mb-5">
+                        I am a 23-year-old Computer Science <s>student</s> graduate provided with a get-it-done, on-time
+                        and high-quality-product spirit, living in Athens, GR.
+
+                        <br><br>
+                        I discovered my <span id="heart">❤️</span> for programming a few years ago and since then I can't get enough of it.
+                        I'm always thrilled to learn about new technologies, having a great interest in
+                        mobile application development, web development and AI.
+
+                        <br><br>
+                        Aside from writing lines of code and killing bugs
+                        I really enjoy taking photos, exploring new destinations and riding my motorcycle.
+                    </p>
+
+                    <h2 class="mb-3"> Technologies I use </h2>
+
+                    <div class="skills-container d-flex flex-wrap gap-2">
+
+                        <div class="skill"> <img src="assets/images/skills/python-logo.svg" alt="python"> Python </div>
+                        <div class="skill"> <img src="assets/images/skills/git-logo.svg" alt="git"> Git </div>
+                        <div class="skill"> <img src="assets/images/skills/js-logo.svg" alt="js"> Javascript </div>
+                        <div class="skill"> <img src="assets/images/skills/java-logo.svg" alt="java"> Java </div>
+                        <div class="skill"> <img src="assets/images/skills/php-logo.svg" alt="php"> PHP </div>
+                        <div class="skill"> <img src="assets/images/skills/wp-logo.svg" alt="wordpress"> Wordpress </div>
+                        <div class="skill"> <img src="assets/images/skills/css3-logo.svg" alt="css3"> CSS3 </div>
+                        <div class="skill"> <img src="assets/images/skills/bootstrap-logo.svg" alt="bootstrap"> Bootstrap </div>
+                        <div class="skill"> <img src="assets/images/skills/html5-logo.svg" alt="html5"> HTML5 </div>
+                        <div class="skill"> <img src="assets/images/skills/github-logo.svg" alt="github"> Github </div>
+                        <div class="skill"> <img src="assets/images/skills/jquery-logo.svg" alt="jquery"> jQuery </div>
+                        <div class="skill"> <img src="assets/images/skills/mysql-logo.svg" alt="mysql"> MySQL </div>
+                        <div class="skill"> <img src="assets/images/skills/apis-logo.svg" alt="apis"> APIs </div>
+                        <div class="skill"> Responsive Web Design </div>
+
+                    </div>
+
+                </section>
+
+                <section id="contact"
+                    class="portfolio-section d-none d-flex flex-column justify-content-center align-items-center gap-4">
 
                     <!-- να έχει ένα απλό template rendered και ένα toggle για developer mode που θα δείχνει το json -->
                     <!-- στα settings θα μπει το toggle developer mode και αν ενεργοποιηθεί θα δείχνει τις σελίδες σε κώδικα -->
 
                     <h2> Find me on </h2>
 
-                    <div class="d-flex justify-content-center align-items-center gap-5 fs-2">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-5 fs-2">
                         <a href="mailto:melidon.stavros@gmail.com" title="Email me">
                             <div class="contact-way-wrapper">
                                 <i class="far fa-envelope"></i>
@@ -177,7 +228,7 @@
                     </pre> -->
                 </section>
 
-                <section id="projects" class="d-flex flex-column gap-5">
+                <section id="projects" class="portfolio-section d-none flex-column gap-5">
 
                     <h1> Projects </h1>
 
