@@ -33,7 +33,6 @@
 
     <!-- Font Awesome -->
     <script async src="https://kit.fontawesome.com/aba10218e2.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -141,43 +140,126 @@
                     </div>
                 </section>
 
-                <section id="about" class="portfolio-section container-fluid d-none d-flex flex-column gap-5">
+                <section id="about" class="portfolio-section d-none d-flex flex-column gap-5">
 
-                    <h2 class="mb-3"> About </h2>
+                    <h1 class="mb-3"> About </h1>
 
                     <p class="about-me mb-5">
-                        I am a 23-year-old Computer Science <s>student</s> graduate provided with a get-it-done, on-time
+                        I am a <span id="age"></span>-year-old Computer Science <s>student</s> graduate provided with a
+                        get-it-done, on-time
                         and high-quality-product spirit, living in Athens, GR.
 
                         <br><br>
-                        I discovered my <span id="heart">❤️</span> for programming a few years ago and since then I can't get enough of it.
-                        I'm always thrilled to learn about new technologies, having a great interest in
-                        mobile application development, web development and AI.
+                        I discovered my <span id="heart">❤️</span> for programming a few years ago and since then I
+                        can't get enough of it.
+                        I'm always thrilled to learn about new technologies, having a great interest in Web Development
+                        and AI.
 
                         <br><br>
                         Aside from writing lines of code and killing bugs
                         I really enjoy taking photos, exploring new destinations and riding my motorcycle.
                     </p>
 
-                    <h2 class="mb-3"> Technologies I use </h2>
+                    <h1 class="mb-3"> Skills/Frameworks </h1>
 
-                    <div class="skills-container d-flex flex-wrap gap-2">
-
+                    <div class="skills-container d-flex flex-wrap gap-2 mb-5">
                         <div class="skill"> <img src="assets/images/skills/python-logo.svg" alt="python"> Python </div>
                         <div class="skill"> <img src="assets/images/skills/git-logo.svg" alt="git"> Git </div>
                         <div class="skill"> <img src="assets/images/skills/js-logo.svg" alt="js"> Javascript </div>
                         <div class="skill"> <img src="assets/images/skills/java-logo.svg" alt="java"> Java </div>
                         <div class="skill"> <img src="assets/images/skills/php-logo.svg" alt="php"> PHP </div>
-                        <div class="skill"> <img src="assets/images/skills/wp-logo.svg" alt="wordpress"> Wordpress </div>
+                        <div class="skill"> <img src="assets/images/skills/wp-logo.svg" alt="wordpress"> Wordpress
+                        </div>
                         <div class="skill"> <img src="assets/images/skills/css3-logo.svg" alt="css3"> CSS3 </div>
-                        <div class="skill"> <img src="assets/images/skills/bootstrap-logo.svg" alt="bootstrap"> Bootstrap </div>
+                        <div class="skill"> <img src="assets/images/skills/bootstrap-logo.svg" alt="bootstrap">
+                            Bootstrap </div>
                         <div class="skill"> <img src="assets/images/skills/html5-logo.svg" alt="html5"> HTML5 </div>
                         <div class="skill"> <img src="assets/images/skills/github-logo.svg" alt="github"> Github </div>
                         <div class="skill"> <img src="assets/images/skills/jquery-logo.svg" alt="jquery"> jQuery </div>
+                        <div class="skill"> Responsive Web Design </div>
                         <div class="skill"> <img src="assets/images/skills/mysql-logo.svg" alt="mysql"> MySQL </div>
                         <div class="skill"> <img src="assets/images/skills/apis-logo.svg" alt="apis"> APIs </div>
-                        <div class="skill"> Responsive Web Design </div>
+                        <div class="skill"> <img src="assets/images/skills/nodejs-logo.svg" alt="nodejs"> Node.js </div>
+                        <div class="skill"> <img src="assets/images/skills/csharp-logo.svg" alt="C#"> C# </div>
+                    </div>
 
+                    <h1 class="mb-3"> Education </h1>
+
+                    <div class="education-container text-start d-flex flex-column justify-content-start mb-5">
+                        <h4> Harokopio University of Athens </h4>
+                        <p> BSc, INFORMATICS AND TELEMATICS <br> GPA: <span id="gpa">8.6</span>/10 </p>
+
+                        <br>
+
+                        <div class="courses-wrapper d-flex flex-wrap gap-4">
+                            <div class="d-flex flex-column">
+                                <p>Courses (some):</p>
+
+                                <ul id="courses-list">
+                                    <li>Object-Oriented Programming</li>
+                                    <li>Android Development</li>
+                                    <li>Web Development</li>
+                                    <li>Data Structures</li>
+                                    <li>Distributed Systems</li>
+                                    <li>Operating Systems</li>
+                                    <li>Artificial Intelligence</li>
+                                    <li>Data Mining</li>
+                                    <li>Algorithms and Complexity</li>
+                                    <li>Cryptography</li>
+                                </ul>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <p> Thesis Subject: </p> <br>
+
+                                <p id="thesis-subject">
+                                    <caption>
+                                        Develop a Facebook Messenger chatbot that will operate as Harokopio
+                                        University's
+                                        undergraduate student advisor.
+                                    </caption>
+                                </p>
+
+                                <p> Implemented using Python and Rasa Framework. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="mb-3"> Work Experience </h1>
+
+                    <div class="work-container d-flex flex-column align-items-center gap-5">
+                        <div class="work d-flex">
+                            <div class="work-description">
+                                <div>
+                                    <h3 class="job-title"> 
+                                        Web Developer @ <a href="https://www.crowdpolicy.com" target="_blank" rel="noopener noreferrer"> Crowdpolicy </a> 
+                                    </h3>
+                                    <p class="duration"> 11/2020 - Present </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work d-flex">
+                            <div class="work-description">
+                                <div>
+                                    <h3 class="job-title"> 
+                                        Website Maintainer @ <a href="https://www.techville.gr" target="_blank" rel="noopener noreferrer"> Techville </a> 
+                                    </h3>
+                                    <p class="duration"> 2019 - Present </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work d-flex">
+                            <div class="work-description">
+                                <div>
+                                    <h3 class="job-title"> 
+                                        Software Engineer @ <a href="https://www.threenitas.com" target="_blank" rel="noopener noreferrer"> Threenitas </a> 
+                                    </h3>
+                                    <p class="duration"> Internship, 07/2020 - 09/2020 </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </section>
@@ -188,7 +270,7 @@
                     <!-- να έχει ένα απλό template rendered και ένα toggle για developer mode που θα δείχνει το json -->
                     <!-- στα settings θα μπει το toggle developer mode και αν ενεργοποιηθεί θα δείχνει τις σελίδες σε κώδικα -->
 
-                    <h2> Find me on </h2>
+                    <h1> Find me on </h1>
 
                     <div class="d-flex flex-wrap justify-content-center align-items-center gap-5 fs-2">
                         <a href="mailto:melidon.stavros@gmail.com" title="Email me">
@@ -230,7 +312,7 @@
 
                 <section id="projects" class="portfolio-section d-none flex-column gap-5">
 
-                    <h1> Projects </h1>
+                    <h1 class="mb-3"> Projects </h1>
 
                     <div class="projects-wrapper d-flex flex-wrap gap-3">
                         <div class="project">Project 1</div>

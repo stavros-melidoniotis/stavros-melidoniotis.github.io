@@ -52,3 +52,12 @@ function changeActiveTab(clickedElement, isExplorerClick = false) {
     }
 
 }
+
+
+// About section - Age calculation
+
+const birthYear = 1998;
+const currentYear = new Date().getFullYear();
+const ageSpan = document.getElementById('age');
+
+ageSpan.innerText = currentYear - birthYear;

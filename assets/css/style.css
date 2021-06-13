@@ -8,8 +8,9 @@
   --text-color: #e1e4e8;
   --faded-text-color: #e1e4e8d3;
   --accent-color: #f9826c;
+  --h1-bg: rgba(249, 130, 108, 0.8);
   --explorer-hover-bg: #24292e;
-  --bg-text: rgba(56,58,61,0.35);
+  --bg-text: rgba(56, 58, 61, 0.35);
 }
 
 /*-------------------------------
@@ -17,7 +18,6 @@
             GENERIC
 
 --------------------------------*/
-
 
 * {
   margin: 0;
@@ -28,13 +28,11 @@ p {
   margin-bottom: 0;
 }
 
-
 /*-------------------------------
 
             HEADER
 
 --------------------------------*/
-
 
 header {
   height: 35px;
@@ -55,13 +53,11 @@ body {
   color: var(--text-color);
 }
 
-
 /*-------------------------------
 
             SIDEBAR
 
 --------------------------------*/
-
 
 .sidebar {
   width: 4vw;
@@ -90,13 +86,11 @@ body {
   color: white;
 }
 
-
 /*-------------------------------
 
             EXPLORER
 
 --------------------------------*/
-
 
 .explorer {
   width: 18vw;
@@ -141,14 +135,11 @@ body {
   pointer-events: none;
 }
 
-
-
 /*-------------------------------
 
           MAIN CONTENT
 
 --------------------------------*/
-
 
 .tabs-bar-wrapper {
   background-color: var(--header-bg);
@@ -182,17 +173,34 @@ body {
   height: 1rem;
 }
 
-main {
-  padding: 1rem 2rem;
-}
-
 main > section {
   color: var(--text-color);
   font-family: JetBrains Mono, monospace;
   flex: 1 1;
   height: 85vh;
   overflow: auto;
-  padding-bottom: 2rem;
+  padding: 2rem;
+}
+
+section > h1 {
+  width: max-content;
+  background-image: linear-gradient(
+    transparent 0%, 
+    transparent calc(50% - 7px), 
+    var(--h1-bg) calc(50% - 7px), 
+    var(--h1-bg) 100%);
+  background-size: 100% 200%;
+  background-position: 0px 0px;
+  transition: all 120ms ease-in-out 0s;
+}
+
+section > h1:hover {
+  background-image: linear-gradient(
+    transparent 0%, 
+    transparent calc(50% - 9px), 
+    var(--accent-color) calc(50% - 9px), 
+    var(--accent-color) 100%);
+  background-position: 0px 100%;
 }
 
 .home-background {
@@ -207,7 +215,7 @@ main > section {
   color: var(--bg-text);
   line-height: 1.1;
   font-size: 12rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home-foreground {
@@ -220,7 +228,7 @@ main > section {
 }
 
 .home-button {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .me {
@@ -239,15 +247,28 @@ main > section {
 }
 
 @keyframes wave-animation {
-  0% { transform: rotate( 0.0deg) }
-  10% { transform: rotate(14.0deg) }
-  20% { transform: rotate(-8.0deg) }
-  30% { transform: rotate(14.0deg) }
-  40% { transform: rotate(-4.0deg) }
-  60% { transform: rotate( 0.0deg) }
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
 
 .contact-way-wrapper {
   width: 150px;
@@ -266,7 +287,7 @@ main > section {
   max-width: 35em;
   flex: 1 1 20em;
   background-color: var(--header-bg);
-  margin: 1rem .5rem;
+  margin: 1rem 0.5rem;
   text-align: center;
   padding: 2rem;
   border-radius: 9px;
@@ -289,18 +310,18 @@ main > section {
 }
 
 .skills-container {
-  width: 80%;
+  width: 100%;
 }
 
 .skill {
   background-color: var(--accent-color);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0 7px 0 7px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .4rem;
-  transition-duration: .4s;
+  gap: 0.4rem;
+  transition-duration: 0.4s;
 }
 
 .skill:hover {
@@ -312,12 +333,42 @@ main > section {
   height: 2rem;
 }
 
+#gpa {
+  color: var(--accent-color);
+}
+
+#courses-list {
+  max-width: 850px;
+  columns: 2;
+}
+
+#thesis-subject {
+  max-width: 50ch;
+}
+
+.work {
+  width: 90%;
+  max-width: 900px;
+  min-height: 23rem;
+  background-color: var(--header-bg);
+  border-radius: 9px;
+}
+
+.work-description {
+  width: 65%;
+  padding: 1.5rem;
+}
+
+.work-description > div {
+  width: 100%;
+  height: 100%;
+}
+
 /*-------------------------------
 
             FOOTER
 
 --------------------------------*/
-
 
 footer {
   height: 30px;
@@ -338,13 +389,11 @@ footer > div > a:hover {
   color: white;
 }
 
-
 /*-------------------------------
 
             MEDIA
 
 --------------------------------*/
-
 
 @media screen and (min-width: 450px) {
   .footer > div > p {
@@ -364,19 +413,23 @@ footer > div > a:hover {
   }
 }
 
+@media screen and (min-width: 1150px) {
+  .skills-container {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 1530px) {
   .home-background h1 {
     font-size: 9rem;
   }
 }
 
-
 /*-------------------------------
 
             SCROLLBAR
 
 --------------------------------*/
-
 
 /* width */
 ::-webkit-scrollbar {
