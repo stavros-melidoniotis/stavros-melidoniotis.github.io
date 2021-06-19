@@ -78,7 +78,7 @@
                     <div class="menu-item" data-section="contact"> <img loading="lazy"
                             src="assets/images/logos/json-logo.svg" alt="json-logo"> contact.json </div>
                     <div class="menu-item" data-section="projects"> <img loading="lazy"
-                            src="assets/images/logos/json-logo.svg" alt="json-logo"> projects.md </div>
+                            src="assets/images/logos/php-logo.svg" alt="php-logo"> projects.php </div>
                 </div>
 
             </div>
@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="tab-menu-item tab" data-section="projects">
-                        <img loading="lazy" src="assets/images/logos/json-logo.svg" alt="md-logo"> projects.md
+                        <img loading="lazy" src="assets/images/logos/php-logo.svg" alt="php-logo"> projects.php
                     </div>
                 </div>
             </div>
@@ -128,8 +128,10 @@
                                     <h1 class="mb-4"> I'm Stavros Melidoniotis </h1>
                                     <h3 class="work-title mb-5"> Full Stack Developer </h3>
 
-                                    <button class="home-button"> View work </button>
-                                    <button class="home-button"> Contact </button>
+                                    <button id="view-work-button" class="home-button" data-section="projects"> View work
+                                    </button>
+                                    <button id="contact-button" class="home-button" data-section="contact"> Contact
+                                    </button>
                                 </div>
 
                                 <img class="me" width="350" height="280" loading="lazy" src="assets/images/me.jpg"
@@ -160,7 +162,7 @@
                         I really enjoy taking photos, exploring new destinations and riding my motorcycle.
                     </p>
 
-                    <h1 class="mb-3"> Skills/Frameworks </h1>
+                    <h1 class="mb-3"> My Skills </h1>
 
                     <div class="skills-container d-flex flex-wrap gap-2 mb-5">
                         <div class="skill"> <img src="assets/images/skills/python-logo.svg" alt="python"> Python </div>
@@ -187,7 +189,7 @@
 
                     <div class="education-container text-start d-flex flex-column justify-content-start mb-5">
                         <h4> Harokopio University of Athens </h4>
-                        <p> BSc, INFORMATICS AND TELEMATICS <br> GPA: <span id="gpa">8.6</span>/10 </p>
+                        <p> BSc, INFORMATICS AND TELEMATICS <br> GPA: <span class="accent-color">8.6</span>/10 </p>
 
                         <br>
 
@@ -210,7 +212,7 @@
                             </div>
 
                             <div class="d-flex flex-column">
-                                <p> Thesis Subject: </p> <br>
+                                <p> Thesis Subject (Grade <span class="accent-color">10</span>/10): </p> <br>
 
                                 <p id="thesis-subject">
                                     <caption>
@@ -227,48 +229,41 @@
 
                     <h1 class="mb-3"> Work Experience </h1>
 
-                    <div class="work-container d-flex flex-column align-items-center gap-5">
-                        <div class="work d-flex">
+                    <div class="work-container d-flex flex-column gap-5">
+                        <div class="work">
                             <div class="work-description">
-                                <div>
-                                    <h3 class="job-title"> 
-                                        Web Developer @ <a href="https://www.crowdpolicy.com" target="_blank" rel="noopener noreferrer"> Crowdpolicy </a> 
-                                    </h3>
-                                    <p class="duration"> 11/2020 - Present </p>
-                                </div>
+                                <h3 class="job-title">
+                                    Web Developer @ <a href="https://www.crowdpolicy.com" target="_blank"
+                                        rel="noopener noreferrer"> Crowdpolicy </a>
+                                </h3>
+                                <p class="duration"> Full-time, 11/2020 - Present </p>
                             </div>
                         </div>
 
-                        <div class="work d-flex">
+                        <div class="work">
                             <div class="work-description">
-                                <div>
-                                    <h3 class="job-title"> 
-                                        Website Maintainer @ <a href="https://www.techville.gr" target="_blank" rel="noopener noreferrer"> Techville </a> 
-                                    </h3>
-                                    <p class="duration"> 2019 - Present </p>
-                                </div>
+                                <h3 class="job-title">
+                                    Website Maintainer @ <a href="https://www.techville.gr" target="_blank"
+                                        rel="noopener noreferrer"> Techville </a>
+                                </h3>
+                                <p class="duration"> Freelance, 2019 - Present </p>
                             </div>
                         </div>
 
-                        <div class="work d-flex">
+                        <div class="work">
                             <div class="work-description">
-                                <div>
-                                    <h3 class="job-title"> 
-                                        Software Engineer @ <a href="https://www.threenitas.com" target="_blank" rel="noopener noreferrer"> Threenitas </a> 
-                                    </h3>
-                                    <p class="duration"> Internship, 07/2020 - 09/2020 </p>
-                                </div>
+                                <h3 class="job-title">
+                                    Junior Software Engineer @ <a href="https://www.threenitas.com" target="_blank"
+                                        rel="noopener noreferrer"> Threenitas </a>
+                                </h3>
+                                <p class="duration"> Internship, 07/2020 - 09/2020 </p>
                             </div>
                         </div>
                     </div>
 
                 </section>
 
-                <section id="contact"
-                    class="portfolio-section d-none d-flex flex-column justify-content-center align-items-center gap-4">
-
-                    <!-- να έχει ένα απλό template rendered και ένα toggle για developer mode που θα δείχνει το json -->
-                    <!-- στα settings θα μπει το toggle developer mode και αν ενεργοποιηθεί θα δείχνει τις σελίδες σε κώδικα -->
+                <section id="contact" class="portfolio-section d-none d-flex flex-column gap-5">
 
                     <h1> Find me on </h1>
 
@@ -284,7 +279,7 @@
                             rel="noopener noreferrer">
                             <div class="contact-way-wrapper">
                                 <i class="fab fa-linkedin-in"></i>
-                                <!-- www.linkedin.com/in/stavros-melidoniotis/ -->
+                                <!-- stavros-melidoniotis -->
                             </div>
                         </a>
 
@@ -293,21 +288,11 @@
                             rel="noopener noreferrer">
                             <div class="contact-way-wrapper">
                                 <i class="fab fa-github"></i>
-                                <!-- https://github.com/stavros-melidoniotis -->
+                                <!-- stavros-melidoniotis -->
                             </div>
                         </a>
-
                     </div>
 
-                    <!-- <pre>
-                        <code>
-                            {
-                                "email": "<a href="mailto:melidon.stavros@gmail.com">melidon.stavros@gmail.com</a>",
-                                "linked_in": "<a href="https://www.linkedin.com/in/stavros-melidoniotis/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/stavros-melidoniotis/</a>",
-                                "email": <a href="mailto:melidon.stavros@gmail.com">melidon.stavros@gmail.com</a>
-                            }
-                        </code>
-                    </pre> -->
                 </section>
 
                 <section id="projects" class="portfolio-section d-none flex-column gap-5">
@@ -315,15 +300,139 @@
                     <h1 class="mb-3"> Projects </h1>
 
                     <div class="projects-wrapper d-flex flex-wrap gap-3">
-                        <div class="project">Project 1</div>
-                        <div class="project">Project 2</div>
-                        <div class="project">Project 3</div>
-                        <div class="project">Project 4</div>
+                        <div class="project">
+                            <div>
+                                <h3 class="project-title"> IG Tagger </h3>
+                                <hr>
 
-                        <div class="project">Project 5</div>
-                        <div class="project">Project 6</div>
-                        <div class="project">Project 7</div>
-                        <div class="project">Project 8</div>
+                                <p class="project-description text-start">
+                                    Python script that automates the process of tagging people in Instagram giveaways.
+                                </p>
+
+                            </div>
+
+                            <div class="project-link">
+                                <a href="https://github.com/stavros-melidoniotis/ig_tagger" target="_blank"
+                                    rel="noopener noreferrer"> <i class="fab fa-github"></i> </a>
+                            </div>
+
+                            <div class="project-tags">
+                                <p class="tag"> Python </p>
+                                <p class="tag"> Automation </p>
+                                <p class="tag"> AI </p>
+                                <p class="tag"> Selenium </p>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <div>
+                                <h3 class="project-title"> Vale Karta! </h3>
+                                <hr>
+
+                                <p class="project-description text-start">
+                                    Android application operating as a reminder for What's Up packet update.
+                                </p>
+                            </div>
+
+                            <div class="project-link">
+                                <a href="https://github.com/stavros-melidoniotis/vale-karta" target="_blank"
+                                    rel="noopener noreferrer"> <i class="fab fa-github"></i> </a>
+                            </div>
+
+                            <div class="project-tags">
+                                <p class="tag"> Android </p>
+                                <p class="tag"> App </p>
+                                <p class="tag"> Java </p>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <div>
+                                <h3 class="project-title"> Agrolasithi.gr </h3>
+                                <hr>
+
+                                <p class="project-description text-start">
+                                    Multivendor e-shop for the municipality of Lasithi Plateau, where local producers
+                                    can easily
+                                    build their unique e-profiles and promote/sell their products.
+                                </p>
+                            </div>
+
+                            <div class="project-link">
+                                <a href="https://agrolasithi.gr/market/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> </a>
+                            </div>
+
+                            <div class="project-tags">
+                                <p class="tag"> Wordpress </p>
+                                <p class="tag"> Woocommerce </p>
+                                <p class="tag"> PHP </p>
+                                <p class="tag"> Crowdpolicy </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="project">
+                            <div>
+                                <h3 class="project-title"> E-gov Service-Center </h3>
+                                <hr>
+
+                                <p class="project-description text-start">
+                                    Co-developed.
+                                </p>
+
+                                <a href="" target="_blank" rel="noopener noreferrer"> View </a>
+                            </div>
+
+                            <div class="project-tags">
+                                <p class="tag"> Wordpress </p>
+                                <p class="tag"> Multicloud </p>
+                                <p class="tag"> PHP </p>
+                                <p class="tag"> Crowdpolicy </p>
+                            </div>
+                        </div> -->
+
+                        <div class="project">
+                            <div>
+                                <h3 class="project-title"> Greeklit.gr </h3>
+                                <hr>
+
+                                <p class="project-description text-start">
+                                    Co-developed the portal connecting Greek books to the world for the Hellenic
+                                    Foundation of Culture.
+                                </p>
+                            </div>
+
+                            <div class="project-link">
+                                <a href="https://greeklit.gr/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> </a>
+                            </div>
+
+                            <div class="project-tags">
+                                <p class="tag"> Wordpress </p>
+                                <p class="tag"> PHP </p>
+                                <p class="tag"> Crowdpolicy </p>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <div>
+                                <h3 class="project-title"> Cityworks </h3>
+                                <hr>
+
+                                <p class="project-description text-start">
+                                    Worked on the redesign of Cityworks, a platform which showcases public works of
+                                    Greek municipalities and states.
+                                </p>
+                            </div>
+
+                            <div class="project-tags">
+                                <p class="tag"> Wordpress </p>
+                                <p class="tag"> Google Maps </p>
+                                <p class="tag"> Javascript </p>
+                                <p class="tag"> Crowdpolicy </p>
+                                <p class="tag"> PHP </p>
+                            </div>
+                        </div>
                     </div>
 
                 </section>

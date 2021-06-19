@@ -18,7 +18,7 @@ const tabMenuItems = document.querySelectorAll('.tab-menu-item');
 explorerMenuItems.forEach((item) => {
     item.addEventListener('click', event => {
         showSection(event.target.dataset.section);
-        changeActiveTab(event.target, true);
+        changeActiveTab(event.target);
     });
 });
 
@@ -27,6 +27,19 @@ tabMenuItems.forEach((item) => {
         showSection(event.target.dataset.section);
         changeActiveTab(event.target);
     });
+});
+
+const viewWorkBtn = document.getElementById('view-work-button');
+const contactBtn = document.getElementById('contact-button');
+
+viewWorkBtn.addEventListener('click', () => {
+    showSection('projects');
+    changeActiveTab(viewWorkBtn);
+});
+
+contactBtn.addEventListener('click', () => {
+    showSection('contact');
+    changeActiveTab(contactBtn);
 });
 
 function showSection(sectionID) {
@@ -40,17 +53,11 @@ function showSection(sectionID) {
     });
 }
 
-function changeActiveTab(clickedElement, isExplorerClick = false) {
+function changeActiveTab(clickedElement) {
     let activeTab = document.querySelector('.tab-menu-item.tab.active');
 
-    if (isExplorerClick) {
-        activeTab.classList.remove('active');
-        document.querySelector(`.tab-menu-item.tab[data-section="${clickedElement.dataset.section}"`).classList.add('active');
-    } else {
-        activeTab.classList.remove('active');
-        clickedElement.classList.add('active');
-    }
-
+    activeTab.classList.remove('active');
+    document.querySelector(`.tab-menu-item.tab[data-section="${clickedElement.dataset.section}"`).classList.add('active');
 }
 
 

@@ -28,6 +28,10 @@ p {
   margin-bottom: 0;
 }
 
+.accent-color {
+  color: var(--accent-color);
+}
+
 /*-------------------------------
 
             HEADER
@@ -179,7 +183,7 @@ main > section {
   flex: 1 1;
   height: 85vh;
   overflow: auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 section > h1 {
@@ -202,6 +206,8 @@ section > h1:hover {
     var(--accent-color) 100%);
   background-position: 0px 100%;
 }
+
+/* ------ Home Section ------ */
 
 .home-background {
   z-index: 1;
@@ -229,6 +235,8 @@ section > h1:hover {
 
 .home-button {
   padding: 0.5rem;
+  background-color: var(--text-color);
+  border: none;
 }
 
 .me {
@@ -270,20 +278,38 @@ section > h1:hover {
   }
 }
 
+/* ------ Contact Section ------ */
+
+#contact a {
+  text-decoration: none;
+}
+
 .contact-way-wrapper {
+  background-color: var(--bg-text);
+  color: white;
+  position: relative;
+  padding: 2rem;
+}
+
+.contact-bubble {
   width: 150px;
   height: 150px;
   background-color: var(--bg-text);
-  color: white;
   border-radius: 50%;
   padding: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0%;
+  left: -130px;
+  z-index: 2;
 }
 
+/* ------ Projects Section ------ */
+
 .project {
-  height: 25rem;
+  height: auto;
   max-width: 35em;
   flex: 1 1 20em;
   background-color: var(--header-bg);
@@ -291,11 +317,41 @@ section > h1:hover {
   text-align: center;
   padding: 2rem;
   border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  position: relative;
+}
+
+.project-link {
+  position: absolute;
+  top: 2.1rem;
+  right: 1rem;
 }
 
 .project:hover {
   box-shadow: 0px 3px 6px #00000066;
 }
+
+.project a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.tag {
+  padding: .3rem .5rem;
+  background-color: var(--accent-color);
+  border-radius: 15px;
+}
+
+/* ------ About Section ------ */
 
 .about-me {
   max-width: 90ch;
@@ -333,10 +389,6 @@ section > h1:hover {
   height: 2rem;
 }
 
-#gpa {
-  color: var(--accent-color);
-}
-
 #courses-list {
   max-width: 850px;
   columns: 2;
@@ -349,13 +401,20 @@ section > h1:hover {
 .work {
   width: 90%;
   max-width: 900px;
-  min-height: 23rem;
   background-color: var(--header-bg);
   border-radius: 9px;
 }
 
+.job-title a {
+  color: var(--text-color);
+  text-decoration: unset;
+}
+
+.job-title a:hover {
+  text-decoration: underline;
+}
+
 .work-description {
-  width: 65%;
   padding: 1.5rem;
 }
 
@@ -443,7 +502,7 @@ footer > div > a:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--header-bg);
+  background: #555;
 }
 
 /* Handle on hover */
