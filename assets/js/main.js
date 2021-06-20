@@ -68,3 +68,40 @@ const currentYear = new Date().getFullYear();
 const ageSpan = document.getElementById('age');
 
 ageSpan.innerText = currentYear - birthYear;
+
+
+// About section - Work details
+
+const expandButtons = document.querySelectorAll('.expand-details');
+
+expandButtons.forEach((button) => {
+    button.addEventListener('click', function() {
+        let workWrapper = this.closest('.work-wrapper');
+        let arrow = this.children[0];
+        let detailsDiv = workWrapper.children[1];
+
+        detailsDiv.classList.toggle('d-none');
+
+        (detailsDiv.classList.contains('d-none')) ? arrow.style.transform = 'rotate(360deg)' : arrow.style.transform = 'rotate(-180deg)';
+    });
+});
+
+
+// Project Filters
+
+const filters = document.querySelectorAll('.project-filter');
+const projects = document.querySelectorAll('.project');
+
+filters.forEach((filter) => {
+    filter.addEventListener('click', function() {
+        let projectTypeToShow = this.value;
+
+        projects.forEach((project) => {
+            if (projectTypeToShow == 'all') {
+                project.style.display = 'flex';
+            } else {
+                (project.dataset.projectType == projectTypeToShow) ? project.style.display = 'flex' : project.style.display = 'none';
+            }
+        });
+    });
+});

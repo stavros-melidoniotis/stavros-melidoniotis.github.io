@@ -48,19 +48,19 @@
         <!-- sidebar -->
         <aside class="sidebar d-flex flex-column justify-content-between">
             <div class="d-flex flex-column justify-content-center align-items-center gap-4">
-                <div class="w-100 text-center"><i class="far fa-copy"></i></div>
-                <div class="w-100 text-center"><i class="fas fa-search"></i></div>
-                <div class="w-100 text-center"><i class="fas fa-code-branch"></i></div>
+                <div class="no-click w-100 text-center"><i class="far fa-copy"></i></div>
+                <div class="no-click w-100 text-center"><i class="fas fa-search"></i></div>
+                <div class="no-click w-100 text-center"><i class="fas fa-code-branch"></i></div>
             </div>
 
             <div class="d-flex flex-column justify-content-center align-items-center gap-4">
                 <div class="active w-100 text-center"><i class="far fa-user-circle"></i></div>
-                <div class="w-100 text-center"><i class="fas fa-cog"></i></div>
+                <div class="no-click w-100 text-center"><i class="fas fa-cog"></i></div>
             </div>
 
         </aside>
 
-        <!-- Explorer -->
+        <!-- explorer -->
         <div class="explorer d-none d-md-flex flex-column gap-3">
 
             <p class="explorer-title"> EXPLORER </p>
@@ -88,7 +88,7 @@
         <!-- main content -->
         <div class="w-100 d-flex flex-column">
 
-            <!-- open tabs -->
+            <!-- tabs bar -->
             <div class="tabs-bar-wrapper">
                 <div class="tabs-bar d-flex">
                     <div class="tab-menu-item tab active" data-section="home">
@@ -123,7 +123,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div
                                 class="home-foreground w-100 d-flex flex-wrap justify-content-evenly align-items-center gap-5">
-                                <div class="text-wrapper text-center">
+                                <div class="text-wrapper text-center text-xl-start">
                                     <h1> Hi there! <span class="wavy-hand"> 👋🏻 </span> </h1>
                                     <h1 class="mb-4"> I'm Stavros Melidoniotis </h1>
                                     <h3 class="work-title mb-5"> Full Stack Developer </h3>
@@ -144,7 +144,7 @@
 
                 <section id="about" class="portfolio-section d-none d-flex flex-column gap-5">
 
-                    <h1 class="mb-3"> About </h1>
+                    <h1 class="section-title mb-3"> About </h1>
 
                     <p class="about-me mb-5">
                         I am a <span id="age"></span>-year-old Computer Science <s>student</s> graduate provided with a
@@ -162,30 +162,57 @@
                         I really enjoy taking photos, exploring new destinations and riding my motorcycle.
                     </p>
 
-                    <h1 class="mb-3"> My Skills </h1>
+                    <h1 class="section-title mb-3"> My Skills </h1>
+
+                    <p class="skills-text-above">
+                        I have experience working on a team in an agile environment using Atlassian software,
+                        but I also enjoy working independently. Don't worry if a skill is missing – I pick things up
+                        pretty quick.
+                    </p>
 
                     <div class="skills-container d-flex flex-wrap gap-2 mb-5">
-                        <div class="skill"> <img src="assets/images/skills/python-logo.svg" alt="python"> Python </div>
-                        <div class="skill"> <img src="assets/images/skills/git-logo.svg" alt="git"> Git </div>
-                        <div class="skill"> <img src="assets/images/skills/js-logo.svg" alt="js"> Javascript </div>
-                        <div class="skill"> <img src="assets/images/skills/java-logo.svg" alt="java"> Java </div>
-                        <div class="skill"> <img src="assets/images/skills/php-logo.svg" alt="php"> PHP </div>
-                        <div class="skill"> <img src="assets/images/skills/wp-logo.svg" alt="wordpress"> Wordpress
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/python-logo.svg" alt="python">
+                            Python </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/git-logo.svg" alt="git"> Git
                         </div>
-                        <div class="skill"> <img src="assets/images/skills/css3-logo.svg" alt="css3"> CSS3 </div>
-                        <div class="skill"> <img src="assets/images/skills/bootstrap-logo.svg" alt="bootstrap">
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/js-logo.svg" alt="js">
+                            Javascript </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/java-logo.svg" alt="java">
+                            Java </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/php-logo.svg" alt="php"> PHP
+                        </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/wp-logo.svg" alt="wordpress">
+                            Wordpress
+                        </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/css3-logo.svg" alt="css3">
+                            CSS3 </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/bootstrap-logo.svg"
+                                alt="bootstrap">
                             Bootstrap </div>
-                        <div class="skill"> <img src="assets/images/skills/html5-logo.svg" alt="html5"> HTML5 </div>
-                        <div class="skill"> <img src="assets/images/skills/github-logo.svg" alt="github"> Github </div>
-                        <div class="skill"> <img src="assets/images/skills/jquery-logo.svg" alt="jquery"> jQuery </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/html5-logo.svg" alt="html5">
+                            HTML5 </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/github-logo.svg" alt="github">
+                            Github </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/jquery-logo.svg" alt="jquery">
+                            jQuery </div>
                         <div class="skill"> Responsive Web Design </div>
-                        <div class="skill"> <img src="assets/images/skills/mysql-logo.svg" alt="mysql"> MySQL </div>
-                        <div class="skill"> <img src="assets/images/skills/apis-logo.svg" alt="apis"> APIs </div>
-                        <div class="skill"> <img src="assets/images/skills/nodejs-logo.svg" alt="nodejs"> Node.js </div>
-                        <div class="skill"> <img src="assets/images/skills/csharp-logo.svg" alt="C#"> C# </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/mysql-logo.svg" alt="mysql">
+                            MySQL </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/atlassian-logo.svg"
+                                alt="Atlassian"> Atlassian </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/apis-logo.svg" alt="apis">
+                            APIs </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/nodejs-logo.svg" alt="nodejs">
+                            Node.js </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/csharp-logo.svg" alt="C#"> C#
+                        </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/linux-logo.svg" alt="Linux">
+                            Linux </div>
+                        <div class="skill"> <img loading="lazy" src="assets/images/skills/windows-logo.svg"
+                                alt="Windows"> Windows </div>
                     </div>
 
-                    <h1 class="mb-3"> Education </h1>
+                    <h1 class="section-title mb-3"> Education </h1>
 
                     <div class="education-container text-start d-flex flex-column justify-content-start mb-5">
                         <h4> Harokopio University of Athens </h4>
@@ -227,68 +254,107 @@
                         </div>
                     </div>
 
-                    <h1 class="mb-3"> Work Experience </h1>
+                    <h1 class="section-title mb-3"> Work Experience </h1>
 
                     <div class="work-container d-flex flex-column gap-5">
-                        <div class="work">
-                            <div class="work-description">
-                                <h3 class="job-title">
-                                    Web Developer @ <a href="https://www.crowdpolicy.com" target="_blank"
-                                        rel="noopener noreferrer"> Crowdpolicy </a>
-                                </h3>
-                                <p class="duration"> Full-time, 11/2020 - Present </p>
+                        <div class="work-wrapper">
+                            <div class="work">
+                                <div class="work-description">
+                                    <h3 class="job-title">
+                                        Web Developer @ <a href="https://www.crowdpolicy.com" target="_blank"
+                                            rel="noopener noreferrer"> Crowdpolicy </a>
+                                    </h3>
+                                    <p class="duration"> Full-time, 11/2020 - Present </p>
+                                </div>
+
+                                <button class="expand-details"> <i class="fas fa-chevron-down"></i> </button>
+                            </div>
+
+                            <div class="details d-none">
+                                <ul>
+                                    <li>Transforing designs into functional, fully responsive websites.</li>
+                                    <li>Developing new and maintaining existing Portals for municipalities.</li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div class="work">
-                            <div class="work-description">
-                                <h3 class="job-title">
-                                    Website Maintainer @ <a href="https://www.techville.gr" target="_blank"
-                                        rel="noopener noreferrer"> Techville </a>
-                                </h3>
-                                <p class="duration"> Freelance, 2019 - Present </p>
+                        <div class="work-wrapper">
+                            <div class="work">
+                                <div class="work-description">
+                                    <h3 class="job-title">
+                                        Website Maintainer @ <a href="https://www.techville.gr" target="_blank"
+                                            rel="noopener noreferrer"> Techville </a>
+                                    </h3>
+                                    <p class="duration"> Freelance, 2019 - Present </p>
+                                </div>
+
+                                <button class="expand-details"> <i class="fas fa-chevron-down"></i> </button>
+                            </div>
+
+                            <div class="details d-none">
+                                <ul>
+                                    <li>Implementing new website features to increase sales and customer satisfaction.</li>
+                                    <li>Making aesthetic changes whenever asked by website's owner.</li>
+                                    <li>Making sure everything operates normally and troubleshoot any incoming problems.</li>
+                                    <li>Making occasional database (products and site) backups.</li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div class="work">
-                            <div class="work-description">
-                                <h3 class="job-title">
-                                    Junior Software Engineer @ <a href="https://www.threenitas.com" target="_blank"
-                                        rel="noopener noreferrer"> Threenitas </a>
-                                </h3>
-                                <p class="duration"> Internship, 07/2020 - 09/2020 </p>
+                        <div class="work-wrapper">
+                            <div class="work">
+                                <div class="work-description">
+                                    <h3 class="job-title">
+                                        Junior Software Engineer @ <a href="https://www.threenitas.com" target="_blank"
+                                            rel="noopener noreferrer"> Threenitas </a>
+                                    </h3>
+                                    <p class="duration"> Internship, 07/2020 - 09/2020 </p>
+                                </div>
+
+                                <button class="expand-details"> <i class="fas fa-chevron-down"></i> </button>
+                            </div>
+
+                            <div class="details d-none">
+                                <ul>
+                                    <li>Participated in two production projects alongside experienced Full-Stack
+                                        Developers.</li>
+                                    <li>Created detailed instructional tutorials on how to install and use .NET tools,
+                                        accessible to all company's employees.</li>
+                                    <li>Understood the stages and workflow taken by a company, in order to deliver the
+                                        final product to the client.</li>
+                                    <li>Watched numerous Pluralsight courses and read coding books throughout the whole
+                                        internship duration.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-
                 </section>
 
                 <section id="contact" class="portfolio-section d-none d-flex flex-column gap-5">
 
-                    <h1> Find me on </h1>
+                    <h1 class="section-title"> Find me on </h1>
 
-                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-5 fs-2">
-                        <a href="mailto:melidon.stavros@gmail.com" title="Email me">
+                    <div class="d-flex flex-column justify-content-start align-items-start gap-5 fs-2">
+                        <a href="mailto:melidon.stavros@gmail.com">
                             <div class="contact-way-wrapper">
                                 <i class="far fa-envelope"></i>
-                                <!-- melidon.stavros@gmail.com -->
+                                melidon.stavros@gmail.com
                             </div>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/stavros-melidoniotis/" title="LinkedIn" target="_blank"
+                        <a href="https://www.linkedin.com/in/stavros-melidoniotis/" target="_blank"
                             rel="noopener noreferrer">
                             <div class="contact-way-wrapper">
                                 <i class="fab fa-linkedin-in"></i>
-                                <!-- stavros-melidoniotis -->
+                                <span class="d-none d-md-block">linkedin.com/in</span>/stavros-melidoniotis
                             </div>
                         </a>
 
 
-                        <a href="https://github.com/stavros-melidoniotis" title="Github" target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="https://github.com/stavros-melidoniotis" target="_blank" rel="noopener noreferrer">
                             <div class="contact-way-wrapper">
                                 <i class="fab fa-github"></i>
-                                <!-- stavros-melidoniotis -->
+                                <span class="d-none d-md-block">github.com</span>/stavros-melidoniotis
                             </div>
                         </a>
                     </div>
@@ -297,10 +363,32 @@
 
                 <section id="projects" class="portfolio-section d-none flex-column gap-5">
 
-                    <h1 class="mb-3"> Projects </h1>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3">
+                        <h1 class="section-title"> Projects </h1>
+
+                        <div class="filters-wrapper">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input project-filter" type="radio" name="projects-filters"
+                                    id="project-filters-all" value="all" checked>
+                                <label class="form-check-label" for="project-filters-all"> All </label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input project-filter" type="radio" name="projects-filters"
+                                    id="projects-filters-work" value="work">
+                                <label class="form-check-label" for="projects-filters-work"> Work </label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input project-filter" type="radio" name="projects-filters"
+                                    id="projects-filters-personal" value="personal">
+                                <label class="form-check-label" for="projects-filters-personal"> Personal </label>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="projects-wrapper d-flex flex-wrap gap-3">
-                        <div class="project">
+                        <div class="project" data-project-type="personal">
                             <div>
                                 <h3 class="project-title"> IG Tagger </h3>
                                 <hr>
@@ -309,11 +397,10 @@
                                     Python script that automates the process of tagging people in Instagram giveaways.
                                 </p>
 
-                            </div>
-
-                            <div class="project-link">
-                                <a href="https://github.com/stavros-melidoniotis/ig_tagger" target="_blank"
-                                    rel="noopener noreferrer"> <i class="fab fa-github"></i> </a>
+                                <div class="project-link">
+                                    <a href="https://github.com/stavros-melidoniotis/ig_tagger" target="_blank"
+                                        rel="noopener noreferrer"> View project <i class="fab fa-github"></i> </a>
+                                </div>
                             </div>
 
                             <div class="project-tags">
@@ -324,7 +411,7 @@
                             </div>
                         </div>
 
-                        <div class="project">
+                        <div class="project" data-project-type="personal">
                             <div>
                                 <h3 class="project-title"> Vale Karta! </h3>
                                 <hr>
@@ -332,11 +419,11 @@
                                 <p class="project-description text-start">
                                     Android application operating as a reminder for What's Up packet update.
                                 </p>
-                            </div>
 
-                            <div class="project-link">
-                                <a href="https://github.com/stavros-melidoniotis/vale-karta" target="_blank"
-                                    rel="noopener noreferrer"> <i class="fab fa-github"></i> </a>
+                                <div class="project-link">
+                                    <a href="https://github.com/stavros-melidoniotis/vale-karta" target="_blank"
+                                        rel="noopener noreferrer"> View project <i class="fab fa-github"></i> </a>
+                                </div>
                             </div>
 
                             <div class="project-tags">
@@ -346,7 +433,7 @@
                             </div>
                         </div>
 
-                        <div class="project">
+                        <div class="project" data-project-type="work">
                             <div>
                                 <h3 class="project-title"> Agrolasithi.gr </h3>
                                 <hr>
@@ -356,42 +443,23 @@
                                     can easily
                                     build their unique e-profiles and promote/sell their products.
                                 </p>
-                            </div>
 
-                            <div class="project-link">
-                                <a href="https://agrolasithi.gr/market/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> </a>
+                                <div class="project-link">
+                                    <a href="https://agrolasithi.gr/market/" target="_blank" rel="noopener noreferrer">
+                                        Visit website <i class="fas fa-globe"></i> </a>
+                                </div>
+
+
                             </div>
 
                             <div class="project-tags">
                                 <p class="tag"> Wordpress </p>
                                 <p class="tag"> Woocommerce </p>
-                                <p class="tag"> PHP </p>
                                 <p class="tag"> Crowdpolicy </p>
                             </div>
                         </div>
 
-                        <!-- <div class="project">
-                            <div>
-                                <h3 class="project-title"> E-gov Service-Center </h3>
-                                <hr>
-
-                                <p class="project-description text-start">
-                                    Co-developed.
-                                </p>
-
-                                <a href="" target="_blank" rel="noopener noreferrer"> View </a>
-                            </div>
-
-                            <div class="project-tags">
-                                <p class="tag"> Wordpress </p>
-                                <p class="tag"> Multicloud </p>
-                                <p class="tag"> PHP </p>
-                                <p class="tag"> Crowdpolicy </p>
-                            </div>
-                        </div> -->
-
-                        <div class="project">
+                        <div class="project" data-project-type="work">
                             <div>
                                 <h3 class="project-title"> Greeklit.gr </h3>
                                 <hr>
@@ -400,11 +468,12 @@
                                     Co-developed the portal connecting Greek books to the world for the Hellenic
                                     Foundation of Culture.
                                 </p>
-                            </div>
 
-                            <div class="project-link">
-                                <a href="https://greeklit.gr/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> </a>
+                                <div class="project-link">
+                                    <!-- <a href="" target="_blank" rel="noopener noreferrer">
+                                        Visit website <i class="fas fa-external-link-alt"></i> </a> -->
+                                        Link coming soon
+                                </div>
                             </div>
 
                             <div class="project-tags">
@@ -414,7 +483,7 @@
                             </div>
                         </div>
 
-                        <div class="project">
+                        <div class="project" data-project-type="work">
                             <div>
                                 <h3 class="project-title"> Cityworks </h3>
                                 <hr>
@@ -423,6 +492,12 @@
                                     Worked on the redesign of Cityworks, a platform which showcases public works of
                                     Greek municipalities and states.
                                 </p>
+
+                                <div class="project-link">
+                                    <!-- <a href="" target="_blank" rel="noopener noreferrer">
+                                        Visit website <i class="fas fa-external-link-alt"></i> </a> -->
+                                        Link coming soon
+                                </div>
                             </div>
 
                             <div class="project-tags">
@@ -430,7 +505,6 @@
                                 <p class="tag"> Google Maps </p>
                                 <p class="tag"> Javascript </p>
                                 <p class="tag"> Crowdpolicy </p>
-                                <p class="tag"> PHP </p>
                             </div>
                         </div>
                     </div>
