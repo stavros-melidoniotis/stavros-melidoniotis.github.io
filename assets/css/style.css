@@ -504,6 +504,7 @@ footer > div > a:hover {
 @media screen and (min-width: 1150px) {
   .skills-container {
     width: 80%;
+    max-width: 1200px;
   }
 }
 
