@@ -105,3 +105,95 @@ filters.forEach((filter) => {
         });
     });
 });
+
+// Settings
+
+const mainToggler = document.getElementById('main-toggler');
+const settingsToggler = document.getElementById('settings-toggler');
+
+settingsToggler.addEventListener('click', function() {
+    let isAlreadyActive = this.classList.contains('active');
+
+    if (isAlreadyActive) return;
+
+    mainToggler.classList.remove('active');
+    this.classList.add('active');
+
+    showSection('settings');
+    removeActiveTab();
+});
+
+mainToggler.addEventListener('click', function() {
+    let isAlreadyActive = this.classList.contains('active');
+
+    if (isAlreadyActive) return;
+
+    settingsToggler.classList.remove('active');
+    this.classList.add('active');
+
+    showSection('home');
+    setFirstTabActive();
+});
+
+function removeActiveTab() {
+    document.querySelector('.tab.active').classList.remove('active');
+}
+
+function setFirstTabActive() {
+    document.querySelector('.tab').classList.add('active');
+}
+
+
+const localStorage = window.localStorage;
+
+document.addEventListener('DOMContentLoaded', function() {
+    let savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme)
+        setTheme(savedTheme);
+});
+
+const changeThemeButtons = document.querySelectorAll('.set-theme-btn');
+
+changeThemeButtons.forEach((btn) => {
+    btn.addEventListener('click', function() {
+        let themeToSet = this.dataset.theme;
+
+        setTheme(themeToSet);
+        localStorage.setItem('theme', themeToSet);
+    });
+});
+
+function setTheme(theme) {
+    switch(theme) {
+        case 'dark':
+            document.documentElement.style.setProperty('--main-bg', '#24292e');
+            document.documentElement.style.setProperty('--header-bg', '#1f2428');
+            document.documentElement.style.setProperty('--explorer-bg', '#1f2428');
+            document.documentElement.style.setProperty('--accent-color', '#f9826c');
+            document.documentElement.style.setProperty('--explorer-hover-bg', '#24292e');
+            document.documentElement.style.setProperty('--bg-text', 'rgba(56, 58, 61, 0.35)');
+            document.documentElement.style.setProperty('--h1-bg', 'rgba(249, 130, 108, 0.8)');
+            break;
+        // case 'light':
+        //     document.documentElement.style.setProperty('--main-bg', '#ffffff');
+        //     document.documentElement.style.setProperty('--header-bg', '#e5ebf1');
+        //     document.documentElement.style.setProperty('--explorer-bg', '#e5ebf1');
+        //     document.documentElement.style.setProperty('--text-color', '#000000');
+        //     document.documentElement.style.setProperty('--faded-text-color', '#595959');
+        //     document.documentElement.style.setProperty('--accent-color', '#007acc');
+        //     document.documentElement.style.setProperty('--explorer-hover-bg', '#e8e8e8');
+        //     document.documentElement.style.setProperty('--bg-text', 'rgba(111, 111, 111, 0.35)');
+        //     document.documentElement.style.setProperty('--h1-bg', 'rgba(0, 122, 204, 0.8)');
+        //     break;
+        case 'cobalt2':
+            document.documentElement.style.setProperty('--main-bg', '#193549');
+            document.documentElement.style.setProperty('--header-bg', '#122738');
+            document.documentElement.style.setProperty('--explorer-bg', '#122738');
+            document.documentElement.style.setProperty('--accent-color', '#ff628c');
+            document.documentElement.style.setProperty('--explorer-hover-bg', '#193549');
+            document.documentElement.style.setProperty('--bg-text', 'rgba(18, 39, 56, 0.35)');
+            document.documentElement.style.setProperty('--h1-bg', 'rgba(255, 98, 140, 0.8)');
+            break;
+    }
+}
