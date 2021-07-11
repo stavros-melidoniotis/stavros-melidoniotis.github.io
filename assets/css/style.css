@@ -11,6 +11,8 @@
   --h1-bg: rgba(249, 130, 108, 0.8);
   --explorer-hover-bg: #24292e;
   --bg-text: rgba(56, 58, 61, 0.35);
+  --scrollbar-bg: #1f2428;
+  --scrollbar-hover-bg: #19364d;
 }
 
 /*-------------------------------
@@ -565,10 +567,10 @@ footer > div > a:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555;
+  background: var(--explorer-bg);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--scrollbar-hover-bg);
 }

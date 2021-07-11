@@ -174,6 +174,8 @@ function setTheme(theme) {
             document.documentElement.style.setProperty('--explorer-hover-bg', '#24292e');
             document.documentElement.style.setProperty('--bg-text', 'rgba(56, 58, 61, 0.35)');
             document.documentElement.style.setProperty('--h1-bg', 'rgba(249, 130, 108, 0.8)');
+            document.documentElement.style.setProperty('--scrollbar-bg', '#1f2428');
+            document.documentElement.style.setProperty('--scrollbar-hover-bg', '#32383f');
             break;
         // case 'light':
         //     document.documentElement.style.setProperty('--main-bg', '#ffffff');
@@ -194,6 +196,8 @@ function setTheme(theme) {
             document.documentElement.style.setProperty('--explorer-hover-bg', '#193549');
             document.documentElement.style.setProperty('--bg-text', 'rgba(18, 39, 56, 0.35)');
             document.documentElement.style.setProperty('--h1-bg', 'rgba(255, 98, 140, 0.8)');
+            document.documentElement.style.setProperty('--scrollbar-bg', '#122738');
+            document.documentElement.style.setProperty('--scrollbar-hover-bg', '#1d3e58');
             break;
     }
 }
