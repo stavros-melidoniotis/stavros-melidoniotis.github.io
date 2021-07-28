@@ -426,8 +426,16 @@ main > section {
 }
 
 .project-link {
+  width: fit-content;
   text-align: start;
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.project-link a:hover {
+  text-decoration: underline;
 }
 
 .project:hover {
