@@ -513,6 +513,18 @@ footer > div > a:hover {
   color: white;
 }
 
+#repo-link {
+  text-decoration: none;
+  padding: .2rem .5rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+#repo-link:hover {
+  background-color: var(--explorer-bg);
+}
+
 /*-------------------------------
 
             MEDIA
