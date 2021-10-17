@@ -410,14 +410,12 @@ main > section {
 
 .projects-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1.5rem;
 }
 
 .project {
   height: auto;
-  max-width: 35em;
-  flex: 1 1 20em;
   background-color: var(--header-bg);
   margin: 1rem 0.5rem;
   text-align: center;
