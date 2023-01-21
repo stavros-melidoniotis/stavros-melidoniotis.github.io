@@ -1,5 +1,7 @@
 # stavros-melidoniotis.github.io
-My personal portfolio website.
+### *This portfolio is no longer maintained or updated. Check out the new version [here](https://melidon.dev).*
+
+My personal portfolio website. 
 
 The previous version of this portfolio was based on a pre-made Bootstrap theme, so I challenged myself to design and implement this one from scratch, in order to practice my front-end skills. 
 
